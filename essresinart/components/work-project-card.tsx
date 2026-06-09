@@ -6,6 +6,7 @@ type WorkProjectCardProps = {
   title: string;
   category: string;
   categoryId: string;
+  href: string;
   location: string;
   image: string;
   alt: string;
@@ -17,16 +18,14 @@ export function WorkProjectCard({
   title,
   category,
   categoryId,
+  href,
   location,
   image,
   alt,
   description,
 }: WorkProjectCardProps) {
   return (
-    <article
-      id={id}
-      className="surface-card overflow-hidden"
-    >
+    <article id={id} className="surface-card overflow-hidden">
       <div className="relative aspect-[16/12]">
         <Image
           src={image}
@@ -57,9 +56,12 @@ export function WorkProjectCard({
           </p>
         </div>
 
-        <Link href="/contact" className="inline-flex w-fit items-center gap-2 text-sm font-semibold text-[var(--color-accent-strong)] transition hover:text-[var(--color-ink)]">
+        <Link
+          href={href}
+          className="inline-flex w-fit items-center gap-2 text-sm font-semibold text-[var(--color-accent-strong)] transition hover:text-[var(--color-ink)]"
+        >
           View Details
-          <span aria-hidden="true">→</span>
+          <span aria-hidden="true">-&gt;</span>
         </Link>
       </div>
     </article>
