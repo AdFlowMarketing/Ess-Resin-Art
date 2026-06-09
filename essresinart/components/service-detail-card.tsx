@@ -8,7 +8,7 @@ type ServiceDetailCardProps = {
   description: string;
   bullets: readonly string[];
   idealFor: string;
-  href: string;
+  href?: string;
 };
 
 export function ServiceDetailCard({
@@ -59,9 +59,11 @@ export function ServiceDetailCard({
           <p className="text-[0.72rem] font-medium uppercase tracking-[0.22em] text-[var(--color-muted)]">
             Ideal for: {idealFor}
           </p>
-          <Link href={href} className="button-secondary w-fit">
-            Explore Service
-          </Link>
+          {href ? (
+            <Link href={href} className="button-secondary w-fit">
+              Explore Service
+            </Link>
+          ) : null}
         </div>
       </div>
     </article>

@@ -9,10 +9,10 @@ export const siteConfig = {
     "Resin Driveways, Microcement & Epoxy Flooring in Bristol | EssResinArt",
   ogImage: "/images/epoxy-warehouse-floor-paint-Bristol.jpg",
   serviceArea: "Bristol and the surrounding area",
-  email: "hello@essresinart.co.uk",
-  phone: "+44 7930 706 001",
-  whatsapp: "447930706001",
-  addressLine: "Bristol, United Kingdom",
+  email: "essresinart@gmail.com",
+  phone: "+44 7516 825235",
+  whatsapp: "447516825235",
+  addressLine: "19 Sidford Rd, Bristol BS3 5DN, United Kingdom",
   openingHours: "Mon-Fri 09:00-17:30",
 } as const;
 
@@ -112,7 +112,7 @@ export const serviceCards = [
   {
     title: "Venetian Plaster",
     description:
-      "Hand-applied decorative plaster finishes for feature walls, refined interiors, and bespoke architectural spaces.",
+      "Hand-applied decorative plaster finishes for feature walls, refined interiors.",
     image: "/images/stiuk-wall-Bristol.JPG",
     alt: "Venetian plaster wall finish with polished decorative texture",
     href: "/services/venetian-plaster",
@@ -213,34 +213,6 @@ export const detailedServices = [
     href: "/services/resin-bound-bristol",
   },
   {
-    title: "Microcement",
-    category: "Interior",
-    image: "/images/microcement-bathroom-Bristol.jpg",
-    alt: "Refined microcement finish in a modern Bristol bathroom",
-    description:
-      "A highly versatile, continuous decorative coating. Microcement creates an elegant, industrial-luxe aesthetic without the joints or heavy build-up of traditional tiling and concrete.",
-    bullets: [
-      "Waterproof and suitable for wet rooms",
-      "Can be applied over existing surfaces",
-    ],
-    idealFor: "Bathrooms, kitchens, floors, walls",
-    href: "/services",
-  },
-  {
-    title: "Industrial Resin Flooring",
-    category: "Industrial",
-    image: "/images/epoxy-resin-floor-Bristol.jpg",
-    alt: "Industrial resin flooring designed for heavy-duty environments",
-    description:
-      "Heavy-duty resin systems designed for warehouses, back-of-house spaces, and demanding operational environments where performance comes first.",
-    bullets: [
-      "Built for high-traffic and working environments",
-      "Easy-clean finish with strong long-term durability",
-    ],
-    idealFor: "Studios, units, workshops, industrial spaces",
-    href: "/services",
-  },
-  {
     title: "Venetian Plaster",
     category: "Interior",
     image: "/images/stiuk-wall-Bristol.JPG",
@@ -255,6 +227,32 @@ export const detailedServices = [
     href: "/services/venetian-plaster",
   },
   {
+    title: "Microcement",
+    category: "Interior",
+    image: "/images/microcement-bathroom-Bristol.jpg",
+    alt: "Refined microcement finish in a modern Bristol bathroom",
+    description:
+      "A highly versatile, continuous decorative coating. Microcement creates an elegant, industrial-luxe aesthetic without the joints or heavy build-up of traditional tiling and concrete.",
+    bullets: [
+      "Waterproof and suitable for wet rooms",
+      "Can be applied over existing surfaces",
+    ],
+    idealFor: "Bathrooms, kitchens, floors, walls",
+  },
+  {
+    title: "Industrial Resin Flooring",
+    category: "Industrial",
+    image: "/images/epoxy-resin-floor-Bristol.jpg",
+    alt: "Industrial resin flooring designed for heavy-duty environments",
+    description:
+      "Heavy-duty resin systems designed for warehouses, back-of-house spaces, and demanding operational environments where performance comes first.",
+    bullets: [
+      "Built for high-traffic and working environments",
+      "Easy-clean finish with strong long-term durability",
+    ],
+    idealFor: "Studios, units, workshops, industrial spaces",
+  },
+  {
     title: "Decorative Wall Finishes",
     category: "Interior",
     image: "/images/concrete-stiuk-wall-Bristol.jpeg",
@@ -266,7 +264,6 @@ export const detailedServices = [
       "Durable sealed finish for long-term visual impact",
     ],
     idealFor: "Feature walls, reception areas, boutiques",
-    href: "/services",
   },
 ] as const;
 

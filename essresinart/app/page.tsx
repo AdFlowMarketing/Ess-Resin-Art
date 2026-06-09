@@ -46,19 +46,19 @@ export default function Home() {
       <main id="main-content">
         <section className="relative isolate overflow-hidden border-b border-black/6 bg-[var(--color-surface)]">
           <Image
-            src="/images/epoxy-warehouse-floor-paint-Bristol.jpg"
+            src="/images/resin-flooring-hero.jpg"
             alt="Large seamless resin floor installed by EssResinArt"
             fill
             priority
             sizes="100vw"
             className="object-cover object-center"
           />
-          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(244,240,235,0.96)_0%,rgba(244,240,235,0.92)_40%,rgba(244,240,235,0.48)_74%,rgba(244,240,235,0.24)_100%)]" />
-          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.1)_0%,rgba(255,255,255,0.05)_100%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(244,240,235,0.66)_0%,rgba(244,240,235,0.5)_28%,rgba(244,240,235,0.14)_58%,rgba(244,240,235,0.03)_100%)]" />
+          <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.02)_0%,rgba(255,255,255,0.01)_100%)]" />
 
           <div className="shell relative flex min-h-[34rem] items-center py-14 md:min-h-[40rem] md:py-16">
             <div className="max-w-3xl space-y-6">
-              <p className="eyebrow">
+              <p className="eyebrow text-[var(--color-ink)]">
                 EssResinArt / Resin specialists in Bristol
               </p>
               <div className="space-y-5">

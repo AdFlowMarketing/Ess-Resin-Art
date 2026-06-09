@@ -29,6 +29,7 @@ export function ContactForm({ email, whatsappNumber }: ContactFormProps) {
   const [form, setForm] = useState<FormState>(initialFormState);
   const [error, setError] = useState<string>("");
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   function updateField<K extends keyof FormState>(field: K, value: FormState[K]) {
     setForm((current) => ({
@@ -37,7 +38,7 @@ export function ContactForm({ email, whatsappNumber }: ContactFormProps) {
     }));
   }
 
-  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
     if (!form.fullName || !form.email || !form.location || !form.message) {
@@ -47,25 +48,42 @@ export function ContactForm({ email, whatsappNumber }: ContactFormProps) {
     }
 
     setError("");
-    setSubmitted(true);
+    setSubmitted(false);
+    setIsSubmitting(true);
 
-    const subject = encodeURIComponent(
-      `New enquiry from ${form.fullName} about ${form.service}`,
-    );
-    const body = encodeURIComponent(
-      [
-        `Name: ${form.fullName}`,
-        `Email: ${form.email}`,
-        `Phone: ${form.phone || "Not provided"}`,
-        `Project location: ${form.location}`,
-        `Service of interest: ${form.service}`,
-        "",
-        "Project details:",
-        form.message,
-      ].join("\n"),
-    );
+    try {
+      const response = await fetch(`https://formsubmit.co/ajax/${email}`, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          _subject: `New enquiry from ${form.fullName} about ${form.service}`,
+          _template: "table",
+          _captcha: "false",
+          fullName: form.fullName,
+          email: form.email,
+          phone: form.phone || "Not provided",
+          location: form.location,
+          service: form.service,
+          message: form.message,
+        }),
+      });
 
-    window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+      if (!response.ok) {
+        throw new Error("Form submission failed");
+      }
+
+      setSubmitted(true);
+      setForm(initialFormState);
+    } catch {
+      setError(
+        "We could not send the form just now. Please try again, send photos on WhatsApp, or email us directly.",
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (
@@ -185,12 +203,12 @@ export function ContactForm({ email, whatsappNumber }: ContactFormProps) {
 
       {submitted ? (
         <p className="rounded-2xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-700">
-          Your email app should open with the enquiry prefilled. If it does not, use WhatsApp or email us directly.
+          Thanks, your enquiry has been sent. We will get back to you as soon as possible.
         </p>
       ) : null}
 
-      <button type="submit" className="button-primary">
-        Send Enquiry
+      <button type="submit" className="button-primary" disabled={isSubmitting}>
+        {isSubmitting ? "Sending..." : "Send Enquiry"}
       </button>
     </form>
   );

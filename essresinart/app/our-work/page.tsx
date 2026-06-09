@@ -21,25 +21,6 @@ export const metadata: Metadata = {
   },
 };
 
-const categorySections = [
-  {
-    id: "epoxy-flooring",
-    label: "Epoxy Flooring",
-  },
-  {
-    id: "resin-bound-driveways",
-    label: "Resin Bound Driveways",
-  },
-  {
-    id: "microcement",
-    label: "Microcement",
-  },
-  {
-    id: "decorative-finishes",
-    label: "Decorative Finishes",
-  },
-] as const;
-
 export default function OurWorkPage() {
   return (
     <>
@@ -76,37 +57,11 @@ export default function OurWorkPage() {
         </section>
 
         <section className="section-space pt-10 md:pt-14">
-          <div className="shell space-y-16">
+          <div className="shell">
             <div className="grid gap-6 lg:grid-cols-3">
               {workProjects.map((project) => (
                 <WorkProjectCard key={project.id} {...project} />
               ))}
-            </div>
-
-            <div className="grid gap-8 lg:grid-cols-4">
-              {categorySections.map((section) => {
-                const count = workProjects.filter(
-                  (project) => project.categoryId === section.id,
-                ).length;
-
-                return (
-                  <section
-                    key={section.id}
-                    id={section.id}
-                    className="surface-card p-6"
-                  >
-                    <p className="eyebrow">{section.label}</p>
-                    <div className="mt-4 space-y-3">
-                      <h2 className="text-2xl font-semibold tracking-[-0.04em] text-[var(--color-ink)]">
-                        {section.label}
-                      </h2>
-                      <p className="text-sm leading-7 text-[var(--color-muted)]">
-                        {count} featured project{count > 1 ? "s" : ""} in this category, each tailored to the surface, use case, and finish brief.
-                      </p>
-                    </div>
-                  </section>
-                );
-              })}
             </div>
           </div>
         </section>
