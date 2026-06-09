@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  "name": "ess-resin-art",
+  "name": "essresinart",
   "main": ".open-next/worker.js",
   "compatibility_date": "2026-06-09",
   "compatibility_flags": [
@@ -14,7 +14,7 @@
   "services": [
     {
       "binding": "WORKER_SELF_REFERENCE",
-      "service": "ess-resin-art"
+      "service": "essresinart"
     }
   ],
   "images": {
