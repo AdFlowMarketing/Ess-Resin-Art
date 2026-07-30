@@ -67,7 +67,7 @@ const finishCards = [
     title: "Polished Plaster",
     description:
       "Smooth, sophisticated decorative finishes with a contemporary sheen.",
-    image: "/images/polished-plaster.jpg",
+    image: "/images/polished-plaster.png",
     alt: "Smooth polished plaster wall finish by EssResinArt",
   },
   {
@@ -182,7 +182,7 @@ export default function VenetianPlasterPage() {
                 Surface artisan
               </p>
               <h1 className="text-balance text-4xl font-semibold tracking-[-0.06em] sm:text-5xl md:text-6xl">
-                Artisan Venetian Plaster Specialists in Bristol
+                ESSResinArt Venetian Plaster Specialists in Bristol
               </h1>
               <p className="max-w-xl text-pretty text-sm leading-7 text-white/78 md:text-base">
                 Bespoke, hand-applied decorative finishes that transform
