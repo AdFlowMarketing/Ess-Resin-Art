@@ -50,31 +50,31 @@ const processSteps = [
 
 const finishCards = [
   {
-    title: "Marmorino",
+    title: "Grasello",
     description:
       "A classic lime-based plaster offering a natural stone aesthetic with subtle movement.",
     image: "/images/grassello-stucco-wall-mineral-plasters-finishes.jpg",
-    alt: "Marmorino-style Venetian plaster finish with natural movement",
+    alt: "Grasello-style Venetian plaster finish with natural movement",
   },
   {
-    title: "Stucco Veneziano",
+    title: "Marmorino Metallic",
     description:
       "The polished, luxury plaster finish with luminous depth and artisan reflectivity.",
-    image: "/images/concrete-stiuk-wall-Bristol.jpeg",
-    alt: "Stucco Veneziano polished plaster finish in Bristol",
+    image: "/images/marmorino-metallic-bronze-stucco.jpg",
+    alt: "Marmorino Metallic Venetian plaster finish in Bristol",
   },
   {
     title: "Polished Plaster",
     description:
       "Smooth, sophisticated decorative finishes with a contemporary sheen.",
-    image: "/images/stiuk-wall-Bristol.JPG",
+    image: "/images/polished-plaster.jpg",
     alt: "Smooth polished plaster wall finish by EssResinArt",
   },
   {
-    title: "Textured Finishes",
+    title: "Concrete Textured Stucco ",
     description:
       "Raw, architectural surfaces with handcrafted movement and tactile character.",
-    image: "/images/grassello-stucco-wall-mineral-plasters-finishes.jpg",
+    image: "/images/concrete-stucco.jpeg",
     alt: "Textured Venetian plaster surface with artisan detailing",
   },
 ] as const;
