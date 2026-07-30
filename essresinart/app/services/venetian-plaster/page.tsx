@@ -374,9 +374,9 @@ export default function VenetianPlasterPage() {
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-3">
-                  <a href={`mailto:${siteConfig.email}`} className="button-primary">
-                    Email EssResinArt
-                  </a>
+                  <Link href="/contact" className="button-primary">
+                    Contact EssResinArt
+                  </Link>
                   <Link
                     href="/contact"
                     className="button-secondary border-white/20 bg-white/8 text-white hover:bg-white hover:text-[var(--color-ink)]"

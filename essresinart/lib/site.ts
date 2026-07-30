@@ -178,7 +178,7 @@ export const projectHighlights = [
   },
   {
     title: "Outdoor resin patios and paths",
-    image: "/images/resin-patio-pathway-Bristol.jpeg",
+    image: "/images/resin-patio.jpg",
     alt: "Resin patio pathway installed in a residential outdoor setting",
   },
 ] as const;

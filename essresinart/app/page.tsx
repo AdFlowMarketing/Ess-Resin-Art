@@ -123,14 +123,14 @@ export default function Home() {
             </div>
 
             <figure className="surface-card overflow-hidden p-4">
-              <div className="relative aspect-[5/4] overflow-hidden rounded-[calc(var(--radius-card)-0.5rem)]">
-                <Image
-                  src="/images/microcement-bathroom.jpg"
-                  alt="Microcement bathroom installation by EssResinArt"
-                  fill
-                  sizes="(max-width: 1023px) 100vw, 50vw"
-                  className="object-cover"
-                />
+                <div className="relative aspect-[5/4] overflow-hidden rounded-[calc(var(--radius-card)-0.5rem)]">
+                  <Image
+                    src="/images/epoxy-resin-floor-bathroom-Bristol.jpg"
+                    alt="Epoxy resin bathroom floor installation by EssResinArt"
+                    fill
+                    sizes="(max-width: 1023px) 100vw, 50vw"
+                    className="object-cover"
+                  />
               </div>
             </figure>
           </div>
@@ -265,9 +265,9 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-3">
-                  <a href={`mailto:${siteConfig.email}`} className="button-primary">
-                    Email EssResinArt
-                  </a>
+                  <Link href="/contact" className="button-primary">
+                    Contact EssResinArt
+                  </Link>
                   <Link href="/services" className="button-secondary border-white/20 bg-white/8 text-white hover:bg-white hover:text-[var(--color-ink)]">
                     Explore Services
                   </Link>
