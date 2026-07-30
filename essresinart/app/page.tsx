@@ -136,7 +136,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="section-space border-y border-black/6 bg-[var(--color-surface-subtle)]">
+        <section className="section-space border-y border-black/6 bg-[var(--color-surface)]">
           <div className="shell space-y-14">
             <SectionHeading
               eyebrow="The Advantages of Resin Systems"
@@ -158,7 +158,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="projects" className="section-space bg-[var(--color-surface)]">
+        <section id="projects" className="section-space bg-[var(--color-surface-subtle)]">
           <div className="shell space-y-14">
             <SectionHeading
               eyebrow="Our Work"

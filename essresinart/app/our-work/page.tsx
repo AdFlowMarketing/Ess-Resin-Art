@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { WorkProjectCard } from "@/components/work-project-card";
-import { siteConfig, workCategories, workProjects } from "@/lib/site";
+import { siteConfig, workProjects } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: `Our Work | ${siteConfig.name}`,
@@ -27,7 +26,7 @@ export default function OurWorkPage() {
       <SiteHeader currentPath="/our-work" />
       <main id="main-content" className="bg-[var(--color-surface)]">
         <section className="section-space border-b border-black/6">
-          <div className="shell space-y-10">
+          <div className="shell">
             <div className="max-w-3xl space-y-5">
               <p className="eyebrow">Selected Projects</p>
               <h1 className="text-balance text-4xl font-semibold tracking-[-0.06em] text-[var(--color-ink)] sm:text-5xl md:text-6xl">
@@ -37,22 +36,6 @@ export default function OurWorkPage() {
                 A curated selection of bespoke surface installations across the UK. From luxury residential microcement to robust commercial epoxy flooring, explore the precision and craftsmanship behind EssResinArt.
               </p>
             </div>
-
-            <nav aria-label="Project categories" className="flex flex-wrap gap-3">
-              {workCategories.map((category, index) => (
-                <Link
-                  key={category.label}
-                  href={category.href}
-                  className={`rounded-full border px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] transition ${
-                    index === 0
-                      ? "border-[var(--color-ink)] bg-[var(--color-ink)] text-white"
-                      : "border-black/10 bg-white text-[var(--color-muted)] hover:border-[var(--color-accent)] hover:text-[var(--color-ink)]"
-                  }`}
-                >
-                  {category.label}
-                </Link>
-              ))}
-            </nav>
           </div>
         </section>
 

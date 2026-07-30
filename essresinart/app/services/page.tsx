@@ -26,15 +26,15 @@ export default function ServicesPage() {
     <>
       <SiteHeader currentPath="/services" />
       <main id="main-content" className="bg-[var(--color-surface)]">
-        <section className="section-space border-b border-black/6">
+        <section className="section-space border-b border-black/6 bg-[var(--color-surface-strong)]">
           <div className="shell">
             <div className="mx-auto flex max-w-3xl flex-col items-center gap-4 text-center">
               <p className="eyebrow">Services</p>
               <h1 className="text-balance text-4xl font-semibold tracking-[-0.06em] text-[var(--color-ink)] sm:text-5xl md:text-6xl">
-                Specialist surface finishes for modern homes, commercial interiors, and exterior spaces.
+                Premium Surface Finishes for Residential and Commercial Projects in Bristol
               </h1>
               <p className="max-w-2xl text-pretty text-sm leading-7 text-[var(--color-muted)] md:text-base">
-                Delivering high-end, precision surface finishes for residential and commercial projects across Bristol and the surrounding area.
+                Explore epoxy resin flooring, resin bound driveways, Venetian plaster, microcement, industrial resin flooring, and decorative wall finishes tailored to homes and commercial spaces across Bristol.
               </p>
             </div>
           </div>

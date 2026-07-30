@@ -20,7 +20,7 @@ export const navigationLinks = [
   { href: "/", label: "Home", matchPath: "/" },
   { href: "/services", label: "Services", matchPath: "/services" },
   { href: "/our-work", label: "Our Work", matchPath: "/our-work" },
-  { href: "/#about", label: "About Us" },
+  { href: "/about", label: "About Us", matchPath: "/about" },
   { href: "/contact", label: "Contact", matchPath: "/contact" },
 ] as const;
 
@@ -59,7 +59,7 @@ export const contactDetails = [
     title: "Service Area",
     value: siteConfig.addressLine,
     description: "Residential and commercial installations across Bristol and nearby areas.",
-    href: "https://www.openstreetmap.org/?mlat=51.4545&mlon=-2.5879#map=12/51.4545/-2.5879",
+    href: "https://share.google/lzsqRBEzLLYDRA4aw",
   },
   {
     title: "Opening Hours",
@@ -190,10 +190,10 @@ export const detailedServices = [
     image: "/images/epoxy-resin-floor-Bristol.jpg",
     alt: "Smooth epoxy resin floor finish installed in Bristol",
     description:
-      "Seamless, durable, and distinctly modern. Our epoxy resin flooring provides an ultra-hard-wearing surface for garages, studios, commercial units, and design-led interiors.",
+      "Precision-installed epoxy resin flooring in Bristol for clients who want a seamless, durable, and modern surface finish. A strong choice for garages, studios, commercial units, and contemporary interiors where appearance, hygiene, and long-term performance all matter.",
     bullets: [
-      "High resistance to impact and chemicals",
-      "Seamless finish for effortless maintenance",
+      "High resistance to impact, wear, and chemicals",
+      "Seamless surface for easy cleaning and maintenance",
     ],
     idealFor: "Garages, modern homes, showrooms",
     href: "/services/epoxy-resin-flooring",
@@ -204,10 +204,10 @@ export const detailedServices = [
     image: "/images/Resin-Bound-Driveway-Bristol.jpg",
     alt: "Resin bound driveway and entrance surface outside a property",
     description:
-      "Permeable, attractive, and built for kerb appeal. We install resin bound systems that improve approachways, patios, and paths with a clean, high-end finish.",
+      "Resin bound driveways in Bristol designed for property owners who want a clean, attractive, and hard-wearing entrance surface. Our permeable systems improve driveways, paths, and patios with a premium finish that strengthens kerb appeal and everyday practicality.",
     bullets: [
-      "Fully permeable surfacing aligned with SUDS principles",
-      "Weed and frost resistant finish",
+      "Permeable surface in line with SUDS principles",
+      "Frost-resistant, low-maintenance, and weed-resistant finish",
     ],
     idealFor: "Driveways, paths, patios",
     href: "/services/resin-bound-bristol",
@@ -218,10 +218,10 @@ export const detailedServices = [
     image: "/images/stiuk-wall-Bristol.JPG",
     alt: "Venetian plaster wall finish with polished decorative texture",
     description:
-      "Elegant hand-applied plaster finishes that bring depth, softness, and a premium decorative character to interior walls and feature spaces.",
+      "Hand-applied Venetian plaster in Bristol for interiors that need depth, elegance, and a refined decorative finish. This premium wall treatment adds movement, softness, and character to feature walls, reception areas, and high-end residential or commercial spaces.",
     bullets: [
-      "Polished artisan finish with rich visual movement",
-      "Tailored texture and tone to suit the space",
+      "Polished artisan finish with natural visual depth",
+      "Tailored texture, tone, and movement for each space",
     ],
     idealFor: "Feature walls, reception spaces, luxury interiors",
     href: "/services/venetian-plaster",
@@ -232,23 +232,23 @@ export const detailedServices = [
     image: "/images/microcement-bathroom-Bristol.jpg",
     alt: "Refined microcement finish in a modern Bristol bathroom",
     description:
-      "A highly versatile, continuous decorative coating. Microcement creates an elegant, industrial-luxe aesthetic without the joints or heavy build-up of traditional tiling and concrete.",
+      "Microcement finishes in Bristol for clients seeking a continuous, contemporary surface without grout lines or bulky build-up. Ideal for bathrooms, kitchens, walls, and floors, it delivers a clean architectural look with excellent versatility across residential and commercial interiors.",
     bullets: [
-      "Waterproof and suitable for wet rooms",
-      "Can be applied over existing surfaces",
+      "Waterproof finish suitable for bathrooms and wet rooms",
+      "Can be applied over existing prepared surfaces",
     ],
     idealFor: "Bathrooms, kitchens, floors, walls",
   },
   {
     title: "Industrial Resin Flooring",
     category: "Industrial",
-    image: "/images/epoxy-resin-floor-Bristol.jpg",
+    image: "/images/industrial-resin-flooring.jpg",
     alt: "Industrial resin flooring designed for heavy-duty environments",
     description:
-      "Heavy-duty resin systems designed for warehouses, back-of-house spaces, and demanding operational environments where performance comes first.",
+      "Industrial resin flooring in Bristol for environments where durability, safety, and reliable performance are essential. We install heavy-duty systems for warehouses, workshops, studios, and operational spaces that need a resilient, easy-clean surface built for everyday use.",
     bullets: [
-      "Built for high-traffic and working environments",
-      "Easy-clean finish with strong long-term durability",
+      "Designed for high-traffic and demanding work areas",
+      "Durable, low-maintenance, and easy to keep clean",
     ],
     idealFor: "Studios, units, workshops, industrial spaces",
   },
@@ -258,10 +258,10 @@ export const detailedServices = [
     image: "/images/concrete-stiuk-wall-Bristol.jpeg",
     alt: "Decorative textured concrete-style wall finish in Bristol",
     description:
-      "Feature wall finishes with tactile depth and a bespoke look. We create decorative plaster-style surfaces for statement interiors, hospitality spaces, and reception areas.",
+      "Decorative wall finishes in Bristol created for statement interiors that need texture, depth, and a bespoke look. We apply specialist plaster-style finishes that bring a premium handcrafted feel to homes, boutiques, hospitality venues, and reception spaces.",
     bullets: [
-      "Rich texture with a premium handcrafted character",
-      "Durable sealed finish for long-term visual impact",
+      "Rich surface texture with a refined handcrafted character",
+      "Sealed finish for durability and lasting visual impact",
     ],
     idealFor: "Feature walls, reception areas, boutiques",
   },

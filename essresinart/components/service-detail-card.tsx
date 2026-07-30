@@ -7,7 +7,6 @@ type ServiceDetailCardProps = {
   alt: string;
   description: string;
   bullets: readonly string[];
-  idealFor: string;
   href?: string;
 };
 
@@ -17,7 +16,6 @@ export function ServiceDetailCard({
   alt,
   description,
   bullets,
-  idealFor,
   href,
 }: ServiceDetailCardProps) {
   return (
@@ -32,16 +30,16 @@ export function ServiceDetailCard({
         />
       </div>
 
-      <div className="flex flex-1 flex-col gap-4 p-5">
-        <h2 className="text-xl font-semibold tracking-[-0.04em] text-[var(--color-ink)]">
+      <div className="flex flex-1 flex-col gap-4 p-5 md:p-6">
+        <h2 className="text-[1.4rem] font-semibold tracking-[-0.04em] text-[var(--color-ink)]">
           {title}
         </h2>
 
-        <p className="text-sm leading-7 text-[var(--color-muted)]">
+        <p className="text-[0.98rem] leading-7 text-[var(--color-muted)]">
           {description}
         </p>
 
-        <ul className="space-y-3 text-sm leading-6 text-[var(--color-muted)]">
+        <ul className="space-y-3 text-[0.96rem] leading-6 text-[var(--color-muted)]">
           {bullets.map((bullet) => (
             <li key={bullet} className="flex items-start gap-3">
               <span
@@ -55,10 +53,7 @@ export function ServiceDetailCard({
           ))}
         </ul>
 
-        <div className="mt-auto space-y-4 pt-1">
-          <p className="text-[0.72rem] font-medium uppercase tracking-[0.22em] text-[var(--color-muted)]">
-            Ideal for: {idealFor}
-          </p>
+        <div className="mt-auto pt-2">
           {href ? (
             <Link href={href} className="button-secondary w-fit">
               Explore Service
