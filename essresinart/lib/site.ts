@@ -428,15 +428,15 @@ export const workCategories = [
 export const workProjects = [
   {
     id: "bathroom-renovation",
-    title: "Bathroom Renovation",
-    category: "Microcement",
-    categoryId: "microcement",
-    href: "/services",
+    title: "Bespoke Metallic Epoxy Bathroom Floor - Bristol",
+    category: "Epoxy Flooring",
+    categoryId: "epoxy-flooring",
+    href: "/services/epoxy-resin-flooring",
     location: "Bristol",
-    image: "/images/microcement-bathroom.jpg",
-    alt: "Microcement bathroom renovation with seamless walls and vanity",
+    image: "/images/epoxy-resin-floor-bathroom-Bristol.jpg",
+    alt: "Bespoke metallic epoxy resin bathroom floor completed in Bristol",
     description:
-      "A seamless microcement installation bringing a highly durable, waterproof finish to a refined residential bathroom.",
+      "A bold metallic epoxy resin bathroom floor completed for a residential property in Bristol, designed to create a luxury marble-effect finish with strong visual depth.",
   },
   {
     id: "garage-floor",
@@ -448,19 +448,19 @@ export const workProjects = [
     image: "/images/epoxy-quartz-garage-floor.jpg",
     alt: "Epoxy flake resin garage floor installation in Bristol",
     description:
-      "Our epoxy flake resin system is a practical and decorative flooring solution for garages, workshops, utility rooms, commercial units and high-traffic interiors across Bristol.",
+      "Our epoxy flake resin system is a practical and decorative flooring solution for garages, workshops, utility rooms, commercial units across Bristol.",
   },
   {
     id: "driveway-installation",
-    title: "Driveway Installation",
+    title: "Resin Bound Driveway Installation - Bristol",
     category: "Resin Bound Driveways",
     categoryId: "resin-bound-driveways",
     href: "/services/resin-bound-bristol",
-    location: "Manchester",
-    image: "/images/resin-patio-pathway-Bristol.jpeg",
+    location: "Bristol",
+    image: "/images/resin-driveway-Redland.jpg",
     alt: "Resin bound driveway installed in front of a modern home",
     description:
-      "A fully permeable resin bound driveway designed to improve kerb appeal while standing up to daily use.",
+      "A clean and elegant resin bound driveway installation for a residential property in Bristol, creating a smooth outdoor surface that connects the home with the garden..",
   },
   {
     id: "feature-wall",
