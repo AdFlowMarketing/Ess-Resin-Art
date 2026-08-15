@@ -65,12 +65,20 @@ export default function EpoxyResinFlooringPage() {
       <main id="main-content" className="bg-[var(--color-surface)]">
         <section className="relative isolate overflow-hidden border-b border-black/6">
           <Image
-            src="/images/resin-floor-hero.jpg"
+            src="/images/Epoxy-Resin-Floor-hero-mobile.jpg"
             alt="Seamless epoxy resin flooring by EssResinArt"
             fill
             priority
             sizes="100vw"
-            className="object-cover"
+            className="object-cover md:hidden"
+          />
+          <Image
+            src="/images/Epoxy-Resin-Floor-hero-desktop.jpg"
+            alt="Seamless epoxy resin flooring by EssResinArt"
+            fill
+            priority
+            sizes="100vw"
+            className="hidden object-cover md:block"
           />
           <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(250,247,243,0.9)_0%,rgba(250,247,243,0.78)_38%,rgba(250,247,243,0.38)_68%,rgba(250,247,243,0.14)_100%)]" />
           <div className="absolute inset-0 bg-[radial-gradient(circle_at_left_center,rgba(255,255,255,0.34)_0%,rgba(255,255,255,0.08)_34%,transparent_62%)]" />
